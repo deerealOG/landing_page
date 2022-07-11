@@ -340,23 +340,21 @@ button {
   background: #ff6a00;
 }
 
-.swiper {
-  margin-top: 50px;
-  width: 100%;
-  height: 100%;
+.myslider {
   border: solid;
   padding: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 }
-.swiper-slide {
+.myslider .hire-slider {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 20px;
   padding: 20px;
   border-radius: 10px;
   background: rgba(243, 120, 33, 0.2);
-  width: auto;
   text-align: center;
   border: solid;
   font-family: "Poppins";
@@ -365,27 +363,15 @@ button {
   font-size: 20px;
   line-height: 140%;
   color: #030029;
-  height: 320px;
+  width: 300px;
 }
-.swiper-slide img {
-  max-width: 100%;
-  max-height: 100%;
-  border: solid;
-}
-.swiper-slide p {
-  font-family: "Poppins";
-}
-.swiper-slide button {
+.myslider .hire-slider button {
   background: #f37821;
-  color: #fff;
   padding: 10px 24px;
+  width: 100px;
   border-radius: 10px;
+  color: #fff;
   border: transparent;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 140%;
 }
 #slider {
   display: flex;
@@ -437,7 +423,7 @@ button {
   border: transparent;
   color: #ffffff;
 }
-#available {
+.available {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -451,9 +437,9 @@ button {
   line-height: 140%;
   color: #262262;
   overflow-x: hidden;
+  text-align: center;
 }
-#available .title {
-  align-self: center;
+.available .title {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
@@ -461,56 +447,81 @@ button {
   line-height: 140%;
   color: #262262;
 }
-
-#cardContainer {
-  overflow-x: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  padding: 20px;
-  gap: 50px;
-  max-width: 100%;
-  white-space: nowrap;
+.swiper-button-next,
+.swiper-button-prev {
+  color: #30289c;
 }
-/* @keyframes card {
-  0% {
-    left: 0%;
-  }
-  20% {
-    left: 0%;
-  }
-  25% {
-    left: -100%;
-  }
-  45% {
-    left: -100%;
-  }
-  50% {
-    left: -200%;
-  }
-  75% {
-    left: -200%;
-  }
-  95% {
-    left: -200%;
-  }
-  100% {
-    left: -300%;
-  }
-} */
+.hire {
+  display: block;
+
+  text-align: center;
+  overflow: hidden;
+}
+.hire-wrapper {
+  display: flex;
+  gap: 20px;
+  border: solid;
+  padding: 50px;
+  width: 100%;
+}
+.hire-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: solid;
+  width: 280px;
+  height: 400px;
+  padding: 20px;
+  gap: 20px;
+  background: rgba(243, 120, 33, 0.2);
+  border-radius: 10px;
+}
+.hire-card p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 140%;
+  text-align: center;
+  color: #030029;
+}
+.hire-card button {
+  width: 74px;
+  height: 42px;
+  border: transparent;
+  background: #f37821;
+  border-radius: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 140%;
+
+  color: #ffffff;
+}
+.swipe {
+  display: block;
+  padding: 0px 20px;
+  gap: 20px;
+  width: 100%;
+}
+.available-wrapper {
+  width: 100%;
+}
 
 #card {
-  height: 427px;
-  width: 270px;
+  height: 480px;
+  width: 320px;
   background: #fafafa;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
   border-radius: 19.1905px;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
   align-items: center;
   justify-content: center;
-  transition: background 1s ease;
+  overflow: hidden;
 }
 #card:hover {
 }
@@ -520,11 +531,11 @@ button {
   align-items: flex-end;
   background: rgba(243, 120, 33, 0.6);
   border-radius: 50%;
-  height: 310px;
-  width: 310px;
+  height: 380px;
+  width: 120%;
   position: absolute;
-  top: -130px;
-  left: -21px;
+  top: -180px;
+  left: -10%;
   padding-bottom: 41.81px;
 }
 #avatarContainer img {
@@ -538,8 +549,8 @@ button {
   font-size: 20px;
   line-height: 140%;
   color: #262262;
-  position: absolute;
-  top: 220px;
+  position: relative;
+  top: 180px;
 }
 #card .desc {
   font-family: "Poppins";
@@ -548,20 +559,21 @@ button {
   font-size: 16px;
   line-height: 150%;
   color: #262262;
-  width: 200px;
-  position: absolute;
-  top: 270px;
   text-align: center;
+  position: relative;
+  top: 80px;
+  width: 100%;
 }
 #card .desc span {
   color: #adadad;
 }
 #card .buttons {
+  position: relative;
   width: auto;
-  position: absolute;
-  top: 350px;
   display: flex;
+  justify-content: space-around;
   gap: 15px;
+  padding: 0px 10px;
 }
 #card .buttons .save {
   width: 108px;
@@ -597,7 +609,7 @@ button {
   line-height: 150%;
   color: #ffffff;
 }
-#available .view-more {
+.available .view-more {
   border: 0.959526px solid #f37821;
   border-radius: 9.59526px;
   display: flex;
@@ -615,7 +627,7 @@ button {
   line-height: 150%;
   background: #efefef;
 }
-#available .view-more:hover {
+.available .view-more:hover {
   background: #f37821;
   color: #ffffff;
 }
@@ -645,17 +657,11 @@ button {
 #nowHiring .cardCont {
   gap: 50px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-#catOne {
-  display: flex;
-  gap: 50px;
-}
-#catTwo {
-  display: flex;
-  gap: 50px;
-}
+
 #nowHiring .card {
   display: flex;
   flex-direction: column;
@@ -1141,6 +1147,10 @@ footer img {
   }
 }
 @media all and (min-width: 375px) {
+  /* #avatarContainer {
+    left: -35px;
+    border: solid;
+  } */
 }
 @media all and (min-width: 425px) {
   body {
@@ -1166,7 +1176,7 @@ footer img {
 }
 @media all and (min-width: 576px) {
 }
-@media al and (min-width: 600px) {
+@media all and (min-width: 600px) {
   #cta {
     left: 700px;
     border: transparent;
@@ -1174,7 +1184,12 @@ footer img {
   #input {
     width: 500px;
   }
+  /* #avatarContainer {
+    position: absolute;
+    left: -28px;
+    border: solid; */
 }
+
 @media all and (min-width: 700px) {
   #cta {
     left: 55%;
@@ -1305,7 +1320,6 @@ footer img {
   #findJob input {
     width: 600px;
   }
-
   footer {
     position: relative;
     bottom: 0px;
