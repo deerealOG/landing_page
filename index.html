@@ -256,7 +256,7 @@
                       data-icon="bi:bookmark-check"
                       style="color: white; font-size: 20px"
                     ></span>
-                    Sav
+                    Save
                   </button>
                   <button class="hire-me">Hire me</button>
                 </span>
@@ -312,9 +312,9 @@
         </div>
         <div id="nowHiring">
           <p class="title">Now Hiring</p>
-          <div class="cardCont swiper mySwiper">
-            <div class="swiper-wrapper">
-              <div class="card swiper-slide">
+          <div class="cardCont ">
+            <div class="">
+              <div class="card ">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -336,7 +336,7 @@
                 </span>
               </div>
 
-              <div class="card swiper-slider">
+              <div class="card">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -358,7 +358,7 @@
                 </span>
               </div>
 
-              <div class="card swiper-slider">
+              <div class="card ">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -381,7 +381,7 @@
               </div>
             </div>
 
-              <div class="card swiper-slider">
+              <div class="card ">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -767,18 +767,27 @@
           nextEl:".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        
         breakpoints: {
           600:{
+            slidesPerView:2,
+            spaceBetween:40,
+          },
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+          },
+          768:{
             slidesPerView:2,
             spaceBetween:20,
           },
           992: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 4,
+            spaceBetween: 20,
           },
         }
       });
-      var swiper = new Swiper(".mySwiper", {
+      var swipe = new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 20,
         pagination: {
@@ -789,7 +798,8 @@
           nextEl:".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
-      
+        
+        
         breakpoints: {
           600:{
             slidesPerView:2,
@@ -806,11 +816,11 @@
           },
           992: {
             slidesPerView: 3,
-            spaceBetween: 50,
+            spaceBetween: 30,
           },
           1200: {
             slidesPerView: 4,
-            spaceBetween: 50,
+            spaceBetween: 30,
           },
         },
       });
