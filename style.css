@@ -9,7 +9,6 @@
 }
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
 }
 body {
   height: auto;
@@ -340,81 +339,40 @@ button {
   background: #ff6a00;
 }
 
-.myslider {
+.slide-wrapper {
   border: solid;
-  padding: 20px;
+  padding: 50px;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   gap: 20px;
+  position: relative;
 }
-.myslider .hire-slider {
+.slide {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   gap: 20px;
   padding: 20px;
   border-radius: 10px;
   background: rgba(243, 120, 33, 0.2);
   text-align: center;
-  border: solid;
+  border: solid 2px #000;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
   line-height: 140%;
   color: #030029;
-  width: 300px;
+  border: solid;
 }
-.myslider .hire-slider button {
+.slide button {
   background: #f37821;
   padding: 10px 24px;
-  width: 100px;
   border-radius: 10px;
   color: #fff;
   border: transparent;
-}
-#slider {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 50px 20px;
-  gap: 100px;
-  border: solid;
-}
-
-#slidercard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 8px 24px;
-  gap: 20px;
-  background: rgba(243, 120, 33, 0.2);
-  border-radius: 10px;
-  border: solid;
-}
-#slidercard .title {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20pppx;
-  line-height: 140%;
-  text-align: center;
-  color: #030029;
-}
-#slidercard img {
-}
-#slidercard button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px 20px;
-  gap: 10px;
-
-  width: 74px;
-  height: 42px;
-  background: #f37821;
-  border-radius: 10px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
@@ -422,7 +380,24 @@ button {
   line-height: 140%;
   border: transparent;
   color: #ffffff;
+  
 }
+
+.slide .title {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 0.8rem;
+  line-height: 140%;
+  text-align: center;
+  color: #030029;
+  border: solid;
+}
+.slide img {
+  max-width: 100%;
+  height: auto;
+}
+
 .available {
   display: flex;
   flex-direction: column;
@@ -452,34 +427,29 @@ button {
   color: #30289c;
 }
 .hire {
-  display: grid;
-  grid-template-rows: 1fr;
-  width: 100%;
+  display: block;
+
+  text-align: center;
+  overflow: hidden;
 }
 .hire-wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  gap: 0px;
+  gap: 20px;
 
-  padding-left: 20px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px;
   width: 100%;
-  height: 100%;
-  border: solid;
 }
 .hire-card {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
   align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 380px;
+  width: 280px;
+  height: 400px;
+  padding: 20px;
   gap: 20px;
   background: rgba(243, 120, 33, 0.2);
   border-radius: 10px;
-  border: solid;
 }
 .hire-card p {
   font-family: "Poppins";
@@ -489,9 +459,6 @@ button {
   line-height: 140%;
   text-align: center;
   color: #030029;
-}
-.hire-card img {
-  width: 80%;
 }
 .hire-card button {
   width: 74px;
@@ -507,26 +474,28 @@ button {
 
   color: #ffffff;
 }
-.swipe {
+.swiper {
   display: block;
+  padding: 0px 20px;
+  gap: 20px;
   width: 100%;
 }
 .available-wrapper {
-  padding: 20px;
-  position: relative;
-  left: 0;
+  width: 100%;
+  display: inline-block;
 }
 
 #card {
   height: 480px;
+  width: 320px;
   background: #fafafa;
   box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
   border-radius: 19.1905px;
   position: relative;
   display: grid;
   grid-template-columns: 1fr;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 #card:hover {

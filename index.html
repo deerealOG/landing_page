@@ -5,19 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>EngineersHub</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-
-
-    </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.css" integrity="sha512-W3EpFysZWfMjkA5NIsJ1jQbd2CvZrEY0YRB16wlQdePUuxykf4E47/Yqajz2vkCRcMYkxY9+CHY6r2Al0AExBQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
     
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
       rel="stylesheet"
@@ -35,7 +26,8 @@
       href="https://fonts.googleapis.com/css2?family=Poppins"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    
+    
   </head>
   <body>
     <nav id="navbar">
@@ -85,30 +77,37 @@
       </div>
     </section>
     <main>
-      <div class="swiper hire yourSwiper">
-        <div class="swiper-wrapper hire-wrapper">
-          <div class="swiper-slide hire-card">
-            <p>Hire Engineer</p>
-            <img src="images/_1754058710016.svg" alt="">
-            <button>Hire</button>
-          </div>
+      
+        <div class="slide-wrapper responsive">
+          
+            
+              <div class="slide">
+                <p class="title">Hire Engineer</p>
+                <img src="images/_1754058710016.svg" alt="">
+                <button>Hire</button>
+              </div>
+       
 
-          <div class="swiper-slide hire-card">
-            <p> Search verified jobs</p>
-            <img src="images/Layer_x0020_1-1.svg" alt="">
-            <button>Hire</button>
-          </div>
+            
+              <div class="slide">
+                <p class="title"> Search verified jobs</p>
+                <img src="images/Layer_x0020_1-1.svg" alt="">
+                <button>Hire</button>
+              </div>
+   
 
-          <div class="swiper-slide hire-card">
-            <p>Set up your one time resume</p>
-            <img src="images/Layer_x0020_1-1.svg" alt="">
-            <button>Hire</button>
-          </div>
+           
+              <div class="slide">
+                <p class="title">Set up your one time resume</p>
+                <img src="images/Layer_x0020_1-1.svg" alt="">
+                <button>Hire</button>
+              </div>
+   
+        
         </div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+    
       </div>
-        <div class="available" >
+        <!-- <div class="available" >
           <p class="title">Available for Hire</p>
           <div class="swiper mySwiper swipe">
             <div id="cardContainer" class="swiper-wrapper  available-wrapper">
@@ -256,7 +255,7 @@
                       data-icon="bi:bookmark-check"
                       style="color: white; font-size: 20px"
                     ></span>
-                    Save
+                    Sav
                   </button>
                   <button class="hire-me">Hire me</button>
                 </span>
@@ -309,12 +308,12 @@
               <div class="swiper-button-prev"></div>
           </div>
           <button class="view-more">View More Profiles</button>
-        </div>
-        <div id="nowHiring">
+        </div> -->
+        <!-- <div id="nowHiring">
           <p class="title">Now Hiring</p>
-          <div class="cardCont ">
-            <div class="">
-              <div class="card ">
+          <div class="cardCont swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="card swiper-slide">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -336,7 +335,7 @@
                 </span>
               </div>
 
-              <div class="card">
+              <div class="card swiper-slider">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -358,7 +357,7 @@
                 </span>
               </div>
 
-              <div class="card ">
+              <div class="card swiper-slider">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -381,7 +380,7 @@
               </div>
             </div>
 
-              <div class="card ">
+              <div class="card swiper-slider">
                 <span class="desc">
                   <p class="header">IT Training – Centre Manager</p>
                   <p class="name">CDDtech Academy</p>
@@ -710,7 +709,7 @@
           </span>
         </div>
       </div>
-      <div id="desktopMain"></div>
+      <div id="desktopMain"></div> -->
     </main>
 
     <footer>
@@ -750,80 +749,22 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.0/swiper-bundle.min.js" integrity="sha512-+oUge+PHyEv6R7xjWkZ9zeGWbRLIs24P6/2afAClEZi+kZ2vsK+Di4Ud9ON39uAbkkcCrewO3ayzk2765bbPpw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://kit.fontawesome.com/123793bde3.js" crossorigin="anonymous"></script>
-    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
-    <script src="script.js"></script>
-    <script>
-      var swipe = new Swiper (".yourSwiper",{
-        slidesPerView: 2,
-        spaceBetween: 20,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation:{
-          nextEl:".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+    <script type="text/javascript">
+      $('responsive').slick({
         
-        breakpoints: {
-          600:{
-            slidesPerView:2,
-            spaceBetween:40,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          768:{
-            slidesPerView:3,
-            spaceBetween:20,
-          },
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-        }
-      });
-      var swipe = new Swiper(".mySwiper", {
-        slidesPerView: 2,
-        spaceBetween: 20,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation:{
-          nextEl:".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+        infinite: false,
+        speed: 300,
+      
+        autoplay: true,
         
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
         
-        breakpoints: {
-          600:{
-            slidesPerView:2,
-            spaceBetween:40,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-          992: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1200: {
-            slidesPerView: 4,
-            spaceBetween: 30,
-          },
-        },
       });
     </script>
+   
   </body>
 </html>

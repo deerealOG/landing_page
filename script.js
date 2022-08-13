@@ -1,9 +1,6 @@
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: "auto",
-  spaceBetween: 30,
-  slidesPerGroup: 3,
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-});
+let click = document.getElementsByTagName("i")[0];
+let slide = document.querySelector(".hire-container");
+
+click.onclick = function () {
+  slide.classList.add("spin");
+};
