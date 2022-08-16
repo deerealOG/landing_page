@@ -31,28 +31,13 @@ button{
   top: 0;
   z-index: 10;
 }
-#navcta .login {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px 24px;
 
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 140%;
-  color: #ffffff;
-  background: #f37821;
-  border: transparent;
-  border-radius: 10px;
-}
 
 #navcta .login {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 10px 24px;
+  padding: 10px 16px;
 
   font-family: "Poppins";
   font-style: normal;
@@ -75,7 +60,7 @@ button{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 10px 24px;
+  padding: 10px 16px;
 
   font-family: "Poppins";
   font-style: normal;
@@ -219,17 +204,17 @@ height: 50px;
 .hamburger {
   position: absolute;
   top: 4em;
-  right: 3%; 
+  right: 2%; 
   margin-top: -45px;
   width: 2.2em;
-  height: 40px;
+  height: auto;
   z-index: 5;
 }
 
 .hamburger div {
   position: relative;
   top: 2px;
-  right: 2vw;
+  right: 0;
   width:2rem;
   height:4px;
   border-radius: 3px;
