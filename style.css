@@ -363,7 +363,7 @@ button {
 }
 
 .splide__arrows{
-  visibility: visible;
+  visibility: hidden;
   position: absolute;
   top: 45%;
   z-index: 10;
@@ -1166,11 +1166,7 @@ footer img {
     left: -28px;
     border: solid; */
 }
-@media all and (min-width:640px){
-  .splide__arrows{
-    visibility: hidden;
-  }
-}
+
 
 @media all and (min-width: 700px) {
   #cta {
