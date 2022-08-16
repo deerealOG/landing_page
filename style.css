@@ -399,18 +399,18 @@ Animations
   background: #ff6a00;
 }
 
-.splide {
+.firstcta {
   visibility: visible;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
 }
-.splide__track {
+.ctacontainer {
   padding: 30px;
   width: 100%;
 }
-.splide__slide {
+.ctaslide {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -421,29 +421,21 @@ Animations
   align-items: center;
 }
 
-.splide__arrows{
-  visibility: hidden;
-  position: absolute;
-  top: 45%;
-  z-index: 10;
-  width: 99.5%;
-  display: flex;
-  justify-content: space-between;
-}
-.splide__slide h3 {
+
+.ctaslide h3 {
   font-family: 'Poppins';
   font-weight: 600;
   color: #030029;
   text-align: center;
 }
 
-.splide__slide img {
+.ctaslide img {
   width: 100%;
   height: auto;
 
 }
 
-.splide__slide button {
+.ctaslide button {
   padding: 8px 16px;
   background: #fff;
   color: blue;
@@ -456,217 +448,11 @@ Animations
   border: transparent;
   border-radius: 10px;
 }
-
-
-
-.available {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  gap: 50px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
-  color: #262262;
-  overflow-x: hidden;
-  text-align: center;
-}
-.available .title {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
-  color: #262262;
-}
-.swiper-button-next,
-.swiper-button-prev {
-  color: #30289c;
-}
-.hire {
-  display: block;
-
-  text-align: center;
-  overflow: hidden;
-}
-.hire-wrapper {
-  display: flex;
-  gap: 20px;
-
-  padding: 50px;
-  width: 100%;
-}
-.hire-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  width: 280px;
-  height: 400px;
-  padding: 20px;
-  gap: 20px;
-  background: rgba(243, 120, 33, 0.2);
-  border-radius: 10px;
-}
-.hire-card p {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
-  text-align: center;
-  color: #030029;
-}
-.hire-card button {
-  width: 74px;
-  height: 42px;
-  border: transparent;
-  background: #f37821;
-  border-radius: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 140%;
-
-  color: #ffffff;
-}
-.swiper {
-  display: block;
-  padding: 0px 20px;
-  gap: 20px;
-  width: 100%;
-}
-.available-wrapper {
-  width: 100%;
-  display: inline-block;
+.splide__arrows{
+  visibility: hidden;
 }
 
-#card {
-  height: 480px;
-  width: 320px;
-  background: #fafafa;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
-  border-radius: 19.1905px;
-  position: relative;
-  display: grid;
-  grid-template-columns: 1fr;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-#card:hover {
-}
-#avatarContainer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  background: rgba(243, 120, 33, 0.6);
-  border-radius: 50%;
-  height: 380px;
-  width: 120%;
-  position: absolute;
-  top: -180px;
-  left: -10%;
-  padding-bottom: 41.81px;
-}
-#avatarContainer img {
-  width: 120.24px;
-  height: 121.31px;
-}
-#card .bigTittle {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 140%;
-  color: #262262;
-  position: relative;
-  top: 180px;
-}
-#card .desc {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #262262;
-  text-align: center;
-  position: relative;
-  top: 80px;
-  width: 100%;
-}
-#card .desc span {
-  color: #adadad;
-}
-#card .buttons {
-  position: relative;
-  width: auto;
-  display: flex;
-  justify-content: space-around;
-  gap: 15px;
-  padding: 0px 10px;
-}
-#card .buttons .save {
-  width: 108px;
-  height: 40px;
-  background: #262262;
-  border-radius: 9.59526px;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15.3524px;
-  line-height: 150%;
-  color: #ffffff;
-}
-#card .buttons .hire-me {
-  width: 108px;
-  height: 40px;
-  background: #f37821;
-  border-radius: 9.59526px;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15.3524px;
-  line-height: 150%;
-  color: #ffffff;
-}
-.available .view-more {
-  border: 0.959526px solid #f37821;
-  border-radius: 9.59526px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  align-self: center;
-  padding: 9.59526px;
-  gap: 9.6px;
-  color: #f37821;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  background: #efefef;
-}
-.available .view-more:hover {
-  background: #f37821;
-  color: #ffffff;
-}
+
 #nowHiring {
   display: flex;
   flex-direction: column;
