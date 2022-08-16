@@ -325,14 +325,15 @@ Animations
 }
 #hero .title {
   position: absolute;
-  top: 130px;
+  top: 140px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   line-height: 120%;
   text-align: center;
   color: #fafafa;
+  width: auto;
 }
 #hero .bigDesc {
   position: absolute;
@@ -340,7 +341,7 @@ Animations
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 140%;
   text-align: center;
   color: #e5e5e5;
@@ -352,9 +353,9 @@ Animations
   justify-content: center;
   align-items: center;
   padding: 0px;
-  gap: 25px;
+  gap: 10px;
   position: absolute;
-  top: 300px;
+  top: 250px;
 }
 #findJob input[type='search'] {
   display: flex;
@@ -365,7 +366,7 @@ Animations
   background: #ffffff;
   border-radius: 10px;
   border: transparent;
-  padding-left: 80px;
+  padding-left: 60px;
   padding-right: 20px;
 }
 #findJob input[type='search']:focus {
@@ -386,7 +387,7 @@ Animations
 .fa-magnifying-glass{
   position: absolute;
   left: 10%;
-  top:28%;
+  top:22%;
   width: fit-content;
   color: rgba(38, 34, 98, 0.4);
 }
@@ -1358,10 +1359,11 @@ footer img {
   }
   #findJob input[type='search'] {
     width: 600px;
+    padding-left:100px;
   }
   .fa-magnifying-glass {
-    top: 34%;
-    left: 10%;
+    top: 33%;
+    left: 8%;
   }
   footer {
     position: relative;
