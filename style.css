@@ -13,193 +13,33 @@ html {
 body {
   height: auto;
   width: 100vw;
-  position: absolute;
 }
-button {
+button{
   cursor: pointer;
 }
+
 #navbar {
-  background: #262262;
-  height: 90px;
+  background: var(--primary-color);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:flex-start;
+  gap: 5px;
   width: 100%;
-  height: 87px;
-  padding-right: 20px;
-  padding-left: 5px;
+  height: 80px;
   transition: all 0.7s ease-in;
   position: relative;
   top: 0;
   z-index: 10;
 }
-.menu-wrap {
-  position: relative;
-  top: -30px;
-  left: -12px;
-  z-index: 1;
-}
-.menu-wrap .toggler {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  cursor: pointer;
-  width: 50px;
-  height: 50px;
-  opacity: 0;
-}
-/* show menu when checked */
-.menu-wrap .toggler:checked ~ .menu {
-  visibility: visible;
-}
-/* scale of menu when shown */
-.menu-wrap .toggler:checked ~ .menu > div {
-  transform: scale(1);
-  transition-duration: 0.7s;
-}
-.menu-wrap .hamburger {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 60px;
-  height: 60px;
-  padding: 1rem;
-  background: var(--primary-color[]);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-/* hamburger line */
-.menu-wrap .hamburger > div {
-  position: relative;
-  width: 100%;
-  height: 2px;
-  background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-/* top line */
-.menu-wrap .hamburger > div::before {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: -10px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
-}
-/* bottom line */
-.menu-wrap .hamburger > div::after {
-  content: "";
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  width: 100%;
-  height: 2px;
-  background: inherit;
-}
-
-/* toggler animate */
-.menu-wrap .toggler:checked + .hamburger > div {
-  transform: rotate(135deg);
-}
-/* shakes X line on hover, when checked */
-.menu-wrap .toggler:checked:hover + .hamburger > div {
-  transform: rotate(225deg);
-}
-
-/* turns line into X */
-.menu-wrap .toggler:checked + .hamburger > div::before,
-.menu-wrap .toggler:checked + .hamburger > div::after {
-  top: 0;
-  transform: rotate(90deg);
-}
-
-.menu-wrap .menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  visibility: hidden;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-wrap .menu > div {
-  background: var(--overlay-color);
-  border-radius: 50%;
-  width: 200vw;
-  height: 200vw;
-  display: flex;
-  flex: none;
-  align-items: center;
-  justify-content: center;
-  transform: scale(0);
-}
-
-.menu-wrap .menu > div > {
-  text-align: center;
-  max-width: 90vw;
-  max-height: 100vh;
-  opacity: 0;
-  transition: opacity 0.4s ease;
-}
-.menu-wrap .menu > div > ul > li {
-  list-style: none;
-  color: #fff;
-  font-size: 1.5rem;
-  padding: 1rem;
-}
-.menu-wrap .menu > div > ul > li a {
-  font-family: "Poppins";
-  font-weight: 600;
-  text-decoration: none;
-  color: inherit;
-  transition: color 0.4s;
-}
-
-#mycta {
-  position: relative;
-  left: -26px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 10px;
-}
-
-#avatar {
-  width: auto;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
-#avatar img {
-  height: auto;
-  width: 40px;
-}
-#mycta {
-  padding: 0;
-  margin: 0;
-}
-#mycta .login {
+#navcta .login {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px 12px;
+  padding: 10px 24px;
 
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 140%;
   color: #ffffff;
@@ -207,17 +47,127 @@ button {
   border: transparent;
   border-radius: 10px;
 }
-#mycta .login:hover {
+
+#navcta .login {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #f37821;
+  border: transparent;
+  border-radius: 10px;
+}
+
+#navcta {
+  display: flex;
+  gap: 20px;
+  position: relative;
+  top: 50px;
+}
+#navcta .register {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 24px;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: transparent;
+  border: solid 1px #f37821;
+  border-radius: 10px;
+}
+#mycta {
+  display: none;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: fit-content;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+ 
+}
+
+ #yourcta {
+  position: absolute;
+  top: 20px;
+  right: 18%;
+  display: flex;
+  gap: 8px;
+ }
+#yourcta .login{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #f37821;
+  border: transparent;
+  border-radius: 10px;
+
+}
+#yourcta .register {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #f37821;
+}
+#yourcta .register:hover{
+  color:#f37821;
+}
+
+#mycta .login {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0.625rem 1.25rem;
+
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 140%;
+  color: #ffffff;
+  background: #f37821;
+  border: transparent;
+  border-radius: 10px;
+}
+#mycta .login:hover{
   background: #ff6a00;
 }
 #mycta .register {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 8px 12px;
+  padding: 0.625rem 1.25rem;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1rem;
   line-height: 140%;
   color: #ffffff;
@@ -229,47 +179,168 @@ button {
   color: #f37821;
 }
 #logo {
-}
-#logo:hover {
-  cursor: pointer;
-}
-#logo img {
-  height: 50px;
+  position: absolute;
+  left: 2vw;
 }
 
-#hamburger {
+#logo:hover {
+cursor: pointer;
+}
+#logo img {
+height: 50px;
+}
+  
+  #hamburger {
+    color: #ffffff;
+  }
+  #desktop {
+    display: none;
+  }
+  form i {
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+}
+
+#passcont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+
+}
+#toggle {
+  display: none;
+}
+
+/**
+  Hamburger
+**/
+.hamburger {
+  position: absolute;
+  top: 4em;
+  right: 3%; 
+  margin-top: -45px;
+  width: 2.2em;
+  height: 40px;
+  z-index: 5;
+}
+
+.hamburger div {
+  position: relative;
+  top: -3.5px;
+  right: 2vw;
+  width:2.6rem;
+  height:8px;
+  border-radius: 3px;
+  background: #f37821;
+  margin-top: 6px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.nav {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: var(--overlay-color);
+  top:-100%;left:0%; right: 0; bottom: 0;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0);
+}
+.nav-wrapper {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.nav-wrapper nav{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.nav a{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-decoration: none;
   color: #ffffff;
 }
-#desktop {
-  display: none;
+/**
+Animations
+**/
+#toggle:checked + .hamburger {
+  position: fixed;
+}
+
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -8px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
+}
+
+/**
+Animations
+**/
+#toggle:checked + .hamburger .top-bun {
+  transform: rotate(-45deg);
+  margin-top: 25px;
+}
+#toggle:checked + .hamburger .bottom-bun {
+  opacity: 0;
+  transform: rotate(45deg);
+}
+#toggle:checked + .hamburger .meat {
+  transform: rotate(45deg);
+  margin-top: -8px;
+}
+
+#toggle:checked + .hamburger + .nav {
+  top: 0;
+  transform: scale(1);
 }
 #hero {
   background: url(images/hero_1.png);
   background-position: center;
   background-size: cover;
   width: 320px;
-  height: 700px;
+  height: 400px;
   display: flex;
   justify-content: center;
 }
 #hero .title {
   position: absolute;
-  top: 180px;
+  top: 130px;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
+  font-size: 1.8rem;
   line-height: 120%;
   text-align: center;
   color: #fafafa;
 }
 #hero .bigDesc {
   position: absolute;
-  top: 300px;
+  top: 200px;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 600;
+  font-size: 1.25rem;
   line-height: 140%;
   text-align: center;
   color: #e5e5e5;
@@ -283,36 +354,40 @@ button {
   padding: 0px;
   gap: 25px;
   position: absolute;
-  top: 480px;
+  top: 300px;
 }
-#findJob input {
+#findJob input[type='search'] {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 8px 24px;
   gap: 43px;
   width: 280px;
   height: 46px;
   background: #ffffff;
   border-radius: 10px;
   border: transparent;
+  padding-left: 80px;
+  padding-right: 20px;
 }
-#findJob input:focus {
+#findJob input[type='search']:focus {
   outline: solid 2px #f37821;
   font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
-  line-height: 150%;
 }
-#findJob input::placeholder {
-  font-family: "Poppins", "FontAwesome";
+#findJob input[type='search']::placeholder {
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 300;
   font-size: 1rem;
   line-height: 150%;
+  color: rgba(38, 34, 98, 0.4);
+}
+.fa-magnifying-glass{
+  position: absolute;
+  left: 10%;
+  top:28%;
+  width: fit-content;
   color: rgba(38, 34, 98, 0.4);
 }
 
@@ -323,7 +398,6 @@ button {
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
-  width: 120px;
   height: 46px;
   background: #f37821;
   border-radius: 10px;
@@ -331,8 +405,8 @@ button {
   border: transparent;
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 1rem;
   line-height: 150%;
 }
 #findJob button:hover {
@@ -348,7 +422,7 @@ button {
   width: 100%;
 }
 .splide__track {
-  padding: 50px;
+  padding: 30px;
   width: 80%;
 }
 .splide__slide {
@@ -1187,27 +1261,19 @@ footer img {
     height: auto;
   }
   #navbar {
-    height: 100px;
     position: absolute;
     left: 0;
     top: 0;
     z-index: 10;
   }
+  #hero {
+    width: auto;
+    height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 
-  #ipadMenu {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    color: #ffffff;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1rem;
-    line-height: 140%;
-  }
-  #hamburger {
-    display: none;
-  }
 }
 @media all and (min-width: 992px) {
   body {
@@ -1255,25 +1321,17 @@ footer img {
   }
 
   #navbar {
-    height: 100px;
     z-index: 10;
-    padding-left: 20px;
   }
-  #mycta .login {
-    font-weight: 700;
-    padding: 10px 24px;
+  #yourcta {
+    left: 80%;
   }
-  #mycta .register {
-    font-weight: 700;
-    padding: 10px 24px;
-  }
-  .menu-wrap {
+  
+  .hamburger{
     display: none;
   }
 
-  #hero {
-    width: 100%;
-  }
+  
   #brandname {
     width: 120px;
   }
@@ -1281,22 +1339,29 @@ footer img {
     font-family: "Poppins";
     font-style: normal;
     font-weight: 700;
-    font-size: 48px;
+    font-size: 2.5rem;
     line-height: 120%;
+    top: 180px;
   }
   #hero .bigDesc {
     font-family: "Poppins";
     font-style: normal;
-    font-weight: 500;
-    font-size: 32px;
+    font-weight: 600;
+    font-size: 1.25rem;
     line-height: 120%;
     width: 600px;
+    top: 240px;
   }
   #findJob {
+    top: 300px;
     flex-direction: row;
   }
-  #findJob input {
+  #findJob input[type='search'] {
     width: 600px;
+  }
+  .fa-magnifying-glass {
+    top: 34%;
+    left: 10%;
   }
   footer {
     position: relative;

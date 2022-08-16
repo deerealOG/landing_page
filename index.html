@@ -45,9 +45,13 @@
   </head>
   <body>
     <!-- navbar -->
-    <nav id="navbar">
+    <nav id="navbar"  role="navigation" aria-label="main navigation">
       <span id="logo">
         <img src="images/logo.svg" alt="brand logo" />
+      </span>
+      <span id="yourcta">
+        <button type="submit" class="login">Login</button>
+        <button type="submit" class="register">Register</button>
       </span>
 
       <span id="desktop">
@@ -62,24 +66,36 @@
       <span id="mycta">
         <button class="login">Login</button>
         <button class="register">Register</button>
-        <span class="menu-wrap">
-          <input type="checkbox" name="" id="" class="toggler" />
-          <div class="hamburger"><div></div></div>
-          <div class="menu">
-            <div>
-              <ul>
-                <li><a href="#">Hire Engineer</a></li>
-                <li><a href="#">Find Job</a></li>
-                <li><a href="#">Post a Job</a></li>
-              </ul>
-            </div>
-          </div>
-        </span>
+        
       </span>
+      
+      <input id="toggle" type="checkbox"></input>
+
+<label for="toggle" class="hamburger">
+<div class="top-bun"></div>
+<div class="meat"></div>
+<div class="bottom-bun"></div>
+</label>
+
+<div class="nav">
+<div class="nav-wrapper">
+<nav>
+<a href="#">Hire Engineer</a><br>
+<a href="#">Find Job</a><br>
+<a href="#">Post a Job</a><br>
+<div id="navcta">
+  <button class="login">Login</button>
+  <button class="register">Register</button>
+</div>
+
+</nav>
+</div>
+</div>
+      
     </nav>
 
     <!-- hero section -->
-    <section>
+    <section id="heroContainer">
       <div id="hero">
         <h1 class="title">The Engineers Workspace</h1>
         <p class="bigDesc">
@@ -87,7 +103,8 @@
         </p>
         <form action="" method="post" id="findJob">
           <label for="src"></label>
-          <input type="search" placeholder="&#xf002 Search by keyword" />
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="search" placeholder="Search by keyword" />
           <button>Find Job</button>
         </form>
       </div>
@@ -110,17 +127,17 @@
             <ul class="splide__list">
               <li class="splide__slide">
                 <h3>Hire Engineer</h3>
-                <img src="/images/_1754058710016.svg" alt="">
+                <img src="images/_1754058710016.svg" alt="">
                 <button>Hire</button>
               </li>
               <li class="splide__slide">
                 <h3>Search verified jobs</h3>
-                <img src="/images/Layer_x0020_1-1.svg" alt="">
+                <img src="images/Layer_x0020_1.svg" alt="">
                 <button>Find</button>
               </li>
               <li class="splide__slide">
                 <h3>Set up your one time resume</h3>
-                <img src="/images/Layer_x0020_1.svg" alt="">
+                <img src="images/Layer_x0020_1-1.svg" alt="">
                 <button>Set up</button>
               </li>
             </ul>
@@ -783,10 +800,9 @@
       snap:false,
       type:'slide',
       breakpoints: {
-		    640: {
-        perPage: 2,
-        pagination:true,
-		  },
+      620:{
+        perPage:2,
+      },
       425:{
         perPage:1,
         pagination:true,
