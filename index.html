@@ -798,16 +798,22 @@
       gap:'4em',
       pagination:false,
       snap:false,
-      type:'slide',
+      padding:'2em',
       breakpoints: {
       620:{
         perPage:2,
+        autoplay:true,
+        pagination:true,
+        gap:'2em',
+        rewind:true,
+        
       },
       425:{
         perPage:1,
         pagination:true,
         autoplay:true,
-        type:'loop',
+        gap:'2em',
+        rewind:true,
       }
    } }).mount();
   </script>
