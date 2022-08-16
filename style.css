@@ -452,7 +452,14 @@ Animations
   visibility: hidden;
 }
 
+.available-container{
+  visibility: visible;
+}
 
+.avatar-container img {
+  width: 100%;
+  height: auto;
+}
 #nowHiring {
   display: flex;
   flex-direction: column;
