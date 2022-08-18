@@ -25,7 +25,7 @@ button{
   justify-content:flex-start;
   gap: 5px;
   width: 100%;
-  height: 80px;
+  height: 60px;
   transition: all 0.7s ease-in;
   position: relative;
   top: 0;
@@ -85,7 +85,7 @@ button{
 
  #yourcta {
   position: absolute;
-  top: 20px;
+  top: 10px;
   right: 18%;
   display: flex;
   gap: 8px;
@@ -172,12 +172,9 @@ button{
 cursor: pointer;
 }
 #logo img {
-height: 50px;
+height: 40px;
 }
   
-  #hamburger {
-    color: #ffffff;
-  }
   #desktop {
     display: none;
   }
@@ -203,7 +200,7 @@ height: 50px;
 **/
 .hamburger {
   position: absolute;
-  top: 4em;
+  top: 3.3em;
   right: 2%; 
   margin-top: -45px;
   width: 2.2em;
@@ -425,6 +422,7 @@ Animations
 .ctaslide h3 {
   font-family: 'Poppins';
   font-weight: 600;
+  font-size: 1rem;
   color: #030029;
   text-align: center;
 }
@@ -448,18 +446,114 @@ Animations
   border: transparent;
   border-radius: 10px;
 }
-.splide__arrows{
+.arrow-one{
   visibility: hidden;
 }
 
-.available-container{
+
+.smallContainer {
   visibility: visible;
+  display: flex;
 }
 
-.avatar-container img {
-  width: 100%;
-  height: auto;
+.cards {
+  height: 427px;
+  width: 270px;
+  background: #fafafa;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 19.1905px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  visibility: visible;
 }
+.avatarContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background: rgba(243, 120, 33, 0.6);
+  border-radius: 50%;
+  height: 310px;
+  width: 310px;
+  position: absolute;
+  top: -130px;
+  left: -21.298px;
+  padding-bottom: 41.81px;
+}
+.avatarContainer img {
+  width: 120.24px;
+  height: 121.31px;
+}
+.cards .bigTittle {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #262262;
+  position: absolute;
+  top: 220px;
+}
+.cards .desc {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  color: #262262;
+  width: 200px;
+  position: absolute;
+  top: 270px;
+  text-align: center;
+}
+.cards .desc span {
+  color: #adadad;
+}
+.cards .buttons {
+  width: auto;
+  position: absolute;
+  top: 350px;
+  display: flex;
+  gap: 15px;
+}
+.cards .buttons .save {
+  width: 108px;
+  height: 40px;
+  background: #262262;
+  border-radius: 9.59526px;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.3524px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.cards .buttons .hire-me {
+  width: 108px;
+  height: 40px;
+  background: #f37821;
+  border-radius: 9.59526px;
+  border: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15.3524px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+
 #nowHiring {
   display: flex;
   flex-direction: column;
@@ -1085,7 +1179,7 @@ footer img {
   }
 
   #logo img {
-    height: 60px;
+    height: 45px;
   }
 
   #desktop menu ul {
@@ -1118,9 +1212,11 @@ footer img {
   }
 
   #navbar {
+    height: 60px;
     z-index: 10;
   }
   #yourcta {
+    top: 10px;
     left: 80%;
   }
   
@@ -1163,6 +1259,9 @@ footer img {
   .fa-magnifying-glass {
     top: 33%;
     left: 8%;
+  }
+  .ctaslide h3 {
+    font-size: 1.25rem;
   }
   footer {
     position: relative;
