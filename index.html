@@ -284,23 +284,20 @@
    } }).mount();
 
    new Splide( '.available-container', {
-      perPage:4,
-      gap:'2em',
+      perPage:3,
+      type:'slide',
       pagination:false,
-      padding:'1.5rem',
       autoWidth:true,
       breakpoints: {
       620:{
-        perPage:2,
-        autoplay:true,
         pagination:true,
         gap:'2em',
+        type:'slide',
         
       },
       425:{
         perPage:1,
-        autoplay:true,
-        gap:'4em',
+        type:'slide',
       }
    } }).mount();
   </script>
