@@ -114,7 +114,7 @@
         <!-- first call to action/quick action -->
 
         <!-- slide container -->
-        <div class="splide firstcta" style="position:relative">
+        <div class="splide firstcta">
           <div class="splide__arrows arrow-one"></div>
           
           <div class="splide__track ctacontainer">
@@ -143,7 +143,7 @@
             <ul class="splide__list smallContainer">
               <li class="splide__slide cards">
                   <span class="avatarContainer">
-                    <img src="images/Frame 36657.png" alt="engineer avatar" />
+                    <img src="images/Frame 36657 (1).png" alt="engineer avatar" />
                   </span>
                   <p class="bigTittle">Divine Orji</p>
                   <p class="desc">
@@ -164,7 +164,7 @@
 
               <li class="splide__slide cards">
                 <span class="avatarContainer">
-                  <img src="images/Frame 36657.png" alt="engineer avatar" />
+                  <img src="images/Frame 36657 (1).png" alt="engineer avatar" />
                 </span>
                 <p class="bigTittle">Divine Orji</p>
                 <p class="desc">
@@ -181,70 +181,74 @@
                   </button>
                   <button class="hire-me">Hire me</button>
                 </span>
-            </li>
+              </li>
 
-            <li class="splide__slide cards">
-              <span class="avatarContainer">
-                <img src="images/Frame 36657.png" alt="engineer avatar" />
-              </span>
-              <p class="bigTittle">Divine Orji</p>
-              <p class="desc">
-                Civil Engineer<span>, Bsc, Phd, MSc, Coren certified</span>
-              </p>
-              <span class="buttons">
-                <button class="save">
-                  <span
-                    class="iconify"
-                    data-icon="bi:bookmark-check"
-                    style="color: white; font-size: 20px"
-                  ></span>
-                  Save
-                </button>
-                <button class="hire-me">Hire me</button>
-              </span>
-          </li>
+              <li class="splide__slide cards">
+                <span class="avatarContainer">
+                  <img src="images/Frame 36657 (1).png" alt="engineer avatar" />
+                </span>
+                <p class="bigTittle">Divine Orji</p>
+                <p class="desc">
+                  Civil Engineer<span>, Bsc, Phd, MSc, Coren certified</span>
+                </p>
+                <span class="buttons">
+                  <button class="save">
+                    <span
+                      class="iconify"
+                      data-icon="bi:bookmark-check"
+                      style="color: white; font-size: 20px"
+                    ></span>
+                    Save
+                  </button>
+                  <button class="hire-me">Hire me</button>
+                </span>
+              </li>
 
-          <li class="splide__slide cards">
-            <span class="avatarContainer">
-              <img src="images/Frame 36657.png" alt="engineer avatar" />
-            </span>
-            <p class="bigTittle">Divine Orji</p>
-            <p class="desc">
-              Civil Engineer<span>, Bsc, Phd, MSc, Coren certified</span>
-            </p>
-            <span class="buttons">
-              <button class="save">
-                <span
-                  class="iconify"
-                  data-icon="bi:bookmark-check"
-                  style="color: white; font-size: 20px"
-                ></span>
-                Save
-              </button>
-              <button class="hire-me">Hire me</button>
-            </span>
-        </li>
+              <li class="splide__slide cards">
+                <span class="avatarContainer">
+                  <img src="images/Frame 36657 (1).png" alt="engineer avatar" />
+                </span>
+                <p class="bigTittle">Divine Orji</p>
+                <p class="desc">
+                  Civil Engineer<span>, Bsc, Phd, MSc, Coren certified</span>
+                </p>
+                <span class="buttons">
+                  <button class="save">
+                    <span
+                      class="iconify"
+                      data-icon="bi:bookmark-check"
+                      style="color: white; font-size: 20px"
+                    ></span>
+                    Save
+                  </button>
+                  <button class="hire-me">Hire me</button>
+                </span>
+              
+              </li>
 
-        <li class="splide__slide cards">
-          <span class="avatarContainer">
-            <img src="images/Frame 36657.png" alt="engineer avatar" />
-          </span>
-          <p class="bigTittle">Divine Orji</p>
-          <p class="desc">
-            Civil Engineer<span>, Bsc, Phd, MSc, Coren certified</span>
-          </p>
-          <span class="buttons">
-            <button class="save">
-              <span
-                class="iconify"
-                data-icon="bi:bookmark-check"
-                style="color: white; font-size: 20px"
-              ></span>
-              Save
-            </button>
-            <button class="hire-me">Hire me</button>
-          </span>
-      </li>
+              <li class="splide__slide cards">
+                <span class="avatarContainer">
+                  <img src="images/Frame 36657 (1).png" alt="engineer avatar" />
+                </span>
+                <p class="bigTittle">Divine Orji</p>
+                <p class="desc">
+                  Civil Engineer<span>, Bsc, Phd, MSc, Coren certified</span>
+                </p>
+                <span class="buttons">
+                  <button class="save">
+                    <span
+                      class="iconify"
+                      data-icon="bi:bookmark-check"
+                      style="color: white; font-size: 20px"
+                    ></span>
+                    Save
+                  </button>
+                  <button class="hire-me">Hire me</button>
+                </span>
+              </li>
+
+              
+
             </ul>
           </div>
         </div>
@@ -261,45 +265,34 @@
   <script>
     new Splide( '.firstcta', {
       perPage:3,
-      gap:'4em',
+      type:'loop',
+      gap:'2em',
       pagination:false,
-      snap:false,
-      padding:'2em',
-      breakpoints: {
-      620:{
-        perPage:2,
-        autoplay:true,
-        pagination:true,
-        gap:'2em',
-        rewind:true,
-        
-      },
-      425:{
-        perPage:1,
-        pagination:true,
-        autoplay:true,
-        gap:'4em',
-        rewind:true,
+      breakpoints:{
+        320:{
+          perPage:1,
+        }
       }
-   } }).mount();
+      
+   }).mount();
 
-   new Splide( '.available-container', {
-      perPage:3,
-      type:'slide',
-      pagination:false,
-      autoWidth:true,
-      breakpoints: {
-      620:{
-        pagination:true,
-        gap:'2em',
-        type:'slide',
-        
-      },
-      425:{
-        perPage:1,
-        type:'slide',
-      }
-   } }).mount();
+  //  new Splide( '.available-container', {
+  //     perPage:4,
+  //     type:'slide',
+  //     pagination:false,
+  //     rewind:true,
+  //     autoWidth:true,
+  //     breakpoints: {
+  //     620:{
+  //       pagination:true,
+  //       gap:'2em',
+  //       type:'slide',
+  //     },
+  //     425:{
+  //       perPage:1,
+  //       type:'slide',
+  //     }
+  //  } }).mount();
   </script>
 
     
