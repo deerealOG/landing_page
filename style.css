@@ -396,175 +396,41 @@ Animations
   background: #ff6a00;
 }
 
-.firstcta {
-  visibility: visible;
-  border: solid;
-  padding: 20px;
-}
-.ctacontainer{
-  padding: 30px;
+.swiper {
+  height: 400px;
+  width: 100%;
   border: solid;
 }
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
 
-.ctawrapper{
-  display: flex;
-  justify-content: space-around;
-  
-}
-.ctaslide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  border-radius: 10px;
-  background: rgba(243, 120, 33, 0.2);
-  padding: 10px;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
   align-items: center;
-  border: solid;
+  padding: 20px;
+  gap: 20px;
+  background: rgba(243, 120, 33, 0.2);
+  border-radius: 10px;
 }
-
-
-.ctaslide h3 {
-  font-family: 'Poppins';
-  font-weight: 600;
-  font-size: 1rem;
-  color: #030029;
-  text-align: center;
-}
-
-.ctaslide img {
+.swiper-slide img {
+  display: block;
   width: 100%;
   height: auto;
-
+  object-fit: cover;
 }
-
-.ctaslide button {
-  padding: 8px 16px;
-  background: #fff;
-  color: blue;
-  font-family: "Poppins";
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  background: #f37821;
-  color: #fff;
-  border: transparent;
-  border-radius: 10px;
-}
-.arrow-one{
-  visibility: hidden;
-}
-
-.available-container {
-  
-  overflow-x: hidden;
-}
-
-.smallContainer {
-  visibility: visible;
-  display: flex;
-  justify-content: space-around;
-  gap: 50px;
-  width: 100%;
-  position: relative;
-  left: 20px;
-}
-
-.cards {
-  height: 427px;
-  width: 280px;
-  background: #fafafa;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
-  border-radius: 19.1905px;
-  overflow: hidden;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: visible;
-  padding: 20px;
-
-}
-.avatarContainer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 50px;
-  background: rgba(243, 120, 33, 0.6);
-  height: 200px;
-  width: 120%;
-  position: absolute;
-  top: 0px;
-  -webkit-clip-path: circle(55% at 50% 0);
-  clip-path: circle(55% at 50% 0);
-}
-
-.cards .bigTittle {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 1.25rem;
-  line-height: 140%;
-  color: #262262;
-  position: absolute;
-  top: 160px;
-}
-.cards .desc {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 150%;
-  color: #262262;
-  width: 200px;
-  position: absolute;
-  top: 200px;
-  text-align: center;
-}
-.cards .desc span {
-  color: #adadad;
-}
-.cards .buttons {
-  width: auto;
-  position: absolute;
-  top: 350px;
-  display: flex;
-  gap: 15px;
-}
-.cards .buttons .save {
-  width: 80px;
-  height: 40px;
-  background: #262262;
-  border-radius: 9.59526px;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15.3524px;
-  line-height: 150%;
-  color: #ffffff;
-}
-.cards .buttons .hire-me {
-  width: 100px;
-  height: 40px;
-  background: #f37821;
-  border-radius: 9.59526px;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15.3524px;
-  line-height: 150%;
-  color: #ffffff;
-}
-
 
 #nowHiring {
   display: flex;
@@ -1271,9 +1137,6 @@ footer img {
   .fa-magnifying-glass {
     top: 33%;
     left: 8%;
-  }
-  .ctaslide{
-    padding: 20px;
   }
   .ctaslide h3 {
     font-size: 1.25rem;
