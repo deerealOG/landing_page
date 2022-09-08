@@ -439,7 +439,7 @@ Animations
 }
 
 .swiper-button-prev, .swiper-button-next{
-  color: #030029;
+  color: #f37821;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
   content: "";
