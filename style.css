@@ -397,9 +397,8 @@ Animations
 }
 
 .swiper {
-  height: 500px;
+  height: 450px;
   width: 100%;
-  border: solid;
   padding: 50px;
 }
 .swiper-slide {
@@ -436,6 +435,7 @@ Animations
   font-size: 16px;
   font-weight: 600;
   border-radius: 10px;
+  border: transparent;
 }
 
 .swiper-button-prev, .swiper-button-next{
@@ -443,6 +443,10 @@ Animations
 }
 .swiper-button-next::after, .swiper-button-prev::after {
   content: "";
+}
+
+.fa-sharp{
+  font-size: 30px;
 }
 
 #nowHiring {
@@ -968,6 +972,9 @@ footer img {
     flex-direction: row;
     width:auto ;
   }
+  .swiper {
+    height: 500px;
+  }
   .fa-magnifying-glass{
     top: 30%;
   }
@@ -1147,6 +1154,8 @@ footer img {
     width: 600px;
     padding-left:100px;
   }
+
+  
   .fa-magnifying-glass {
     top: 33%;
     left: 8%;
