@@ -390,7 +390,6 @@ Animations
   font-style: normal;
   font-weight: 600;
   font-size: 1rem;
-  line-height: 150%;
 }
 #findJob button:hover {
   background: #ff6a00;
@@ -441,6 +440,7 @@ Animations
 
 .swiper-button-prev, .swiper-button-next{
   color: #f37821;
+  border: none;
 }
 .swiper-button-next::after, .swiper-button-prev::after {
   content: "";
@@ -969,10 +969,6 @@ footer img {
   #hero {
     width: 100%;
   }
-  #findJob{
-    flex-direction: row;
-    width:auto ;
-  }
 
   .fa-magnifying-glass{
     top: 30%;
@@ -991,6 +987,8 @@ footer img {
   }
   #findJob {
     top: 250px;
+    flex-direction: row;
+    width:auto ;
   }
   #findJob input[type='search']{
     width: 260px;
