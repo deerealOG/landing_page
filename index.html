@@ -111,39 +111,55 @@
     </section>
     <main>
       <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      <h3>Hire Qualified Engineer</h3>
-      <img src="./images/_1754058710016.svg" alt="">
-      <button>Hire</button>
-    </div>
+      <div class="swiper mySwiper hire">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper hire-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide hire-slide">
+              <h3>Hire Qualified Engineer</h3>
+              <img src="./images/_1754058710016.svg" alt="">
+              <button>Hire</button>
+            </div>
 
-    <div class="swiper-slide">
-      <h3>Search Verified Jobs</h3>
-      <img src="./images/Layer_20_1.svg" alt="">
-      <button>Search</button>
-    </div>
+            <div class="swiper-slide hire-slide">
+              <h3>Search Verified Jobs</h3>
+              <img src="./images/Layer_20_1.svg" alt="">
+              <button>Search</button>
+            </div>
 
-    <div class="swiper-slide">
-      <h3>Set up your resume</h3>
-      <img src="./images/Layer_20_1-1.svg" alt="">
-      <button>Set up</button>
-    </div>
-    
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
+            <div class="swiper-slide hire-slide">
+              <h3>Set up your resume</h3>
+              <img src="./images/Layer_20_1-1.svg" alt="">
+              <button>Set up</button>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"><i class="fa-sharp fa-solid fa-circle-arrow-left"></i></div>
-  <div class="swiper-button-next"><i class="fa-sharp fa-solid fa-circle-arrow-right"></i><div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"><i class="fa-sharp fa-solid fa-circle-arrow-left"></i></div>
+          <div class="swiper-button-next"><i class="fa-sharp fa-solid fa-circle-arrow-right"></i><div>
 
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+          <!-- If we need scrollbar -->
+          <div class="swiper-scrollbar"></div>
+      </div>
+
+      <div class="swiper mySwiper2 available">
+        <div class="swiper-wrapper available-wrapper">
+          <div class="swiper-slide available-slide">
+            <div class="avatar-container">
+              <img src="./images/Frame 36657.png" alt="">
+            </div>
+            <h3>Divine Orji</h3>
+            <p>Civil Engineer<span>, Bsc, Phd, MSc, Coren certified</span></p>
+            <form action="">
+              <button class="save">Save</button>
+              <button class="hire">Hire Me</button>
+            </form>
+          </div>
+
+        </div>
+      </div>
 
     </main>
     <script
@@ -154,7 +170,7 @@
     <script src="https://kit.fontawesome.com/123793bde3.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
-      const swiper = new Swiper('.swiper', {
+      var swiper = new Swiper('.mySwiper', {
   // Optional parameters
   direction: 'horizontal',
   loop: false,
@@ -188,6 +204,11 @@
           },
         },
 });
+
+var swiper2 = new Swiper('.mySwiper2', {
+ 
+});
+
 
     </script>
   </body>

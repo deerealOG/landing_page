@@ -395,12 +395,16 @@ Animations
   background: #ff6a00;
 }
 
-.swiper {
+swiper {
+  margin: 20px 0;
+}
+
+.hire {
   height: 450px;
   width: 100%;
   padding: 50px;
 }
-.swiper-slide {
+.hire-slide {
   text-align: center;
   font-size: 16px;
   font-family: 'Poppins';
@@ -420,14 +424,14 @@ Animations
   background: rgba(243, 120, 33, 0.2);
   border-radius: 10px;
 }
-.swiper-slide img {
+.hire-slide img {
   display: block;
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.swiper-slide button {
+.hire-slide button {
   background: #f37821;
   color: #fff;
   padding: 10px 24px;
@@ -448,6 +452,16 @@ Animations
 
 .fa-sharp{
   font-size: 30px;
+}
+
+.available {
+  width: 100%;
+  height: 500px;
+  visibility: visible;
+}
+
+.available-slide {
+  background: #fafafa;
 }
 
 #nowHiring {
@@ -1007,7 +1021,7 @@ footer img {
 }
 
 @media all and (min-width: 500px) {
-  .swiper-slide {
+  .hire-slide {
     justify-content: space-around;
     gap: 20px;
   }
@@ -1061,10 +1075,10 @@ footer img {
   #findJob button {
     height: 40px;
   }
-  .swiper {
+  .hire {
     height: 500px;
   }
-  .swiper-slide {
+  .hire-slide {
     justify-content: space-around;
     gap: 20px;
   }
