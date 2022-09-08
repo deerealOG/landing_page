@@ -115,20 +115,20 @@
   <div class="swiper-wrapper">
     <!-- Slides -->
     <div class="swiper-slide">
-      <h3>Hire Engineer</h3>
+      <h3>Hire Qualified Engineer</h3>
       <img src="./images/_1754058710016.svg" alt="">
       <button>Hire</button>
     </div>
 
     <div class="swiper-slide">
-      <h3>Hire Engineer</h3>
-      <img src="./images/_1754058710016.svg" alt="">
+      <h3>Search Verified Jobs</h3>
+      <img src="./images/Layer_20_1.svg" alt="">
       <button>Hire</button>
     </div>
 
     <div class="swiper-slide">
-      <h3>Hire Engineer</h3>
-      <img src="./images/_1754058710016.svg" alt="">
+      <h3>Set up your resume</h3>
+      <img src="./images/Layer_20_1-1.svg" alt="">
       <button>Hire</button>
     </div>
     
@@ -137,8 +137,8 @@
   <div class="swiper-pagination"></div>
 
   <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"><i class="fa-regular fa-circle-left"></i></div>
+  <div class="swiper-button-next"><i class="fa-regular fa-circle-right"></i></div>
 
   <!-- If we need scrollbar -->
   <div class="swiper-scrollbar"></div>
@@ -156,13 +156,14 @@
       const swiper = new Swiper('.swiper', {
   // Optional parameters
   direction: 'horizontal',
-  loop: true,
-  slidesPerView: 3,
+  loop: false,
+  slidesPerView: 1,
   spaceBetween: 30,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true,
   },
 
   // Navigation arrows
@@ -171,7 +172,20 @@
     prevEl: '.swiper-button-prev',
   },
 
-  // And if we need scrollbar
+  breakpoints: {
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
 });
 
     </script>
