@@ -556,150 +556,67 @@ swiper {
   border-radius: 10px;
 }
 
-#nowHiring {
+.now-hiring {
+  width: 100%;
+  padding: 20px;
+  border: solid;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 100px;
+  gap: 20px;
+
 }
-#nowHiring .title {
+.now-hiring-cont {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 4.04446px 20px;
-  gap: 2.53px;
-  height: 0px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 140%;
+  width: 100%;
+  gap: 20px;
+}
+.now-hiring h3 {
   color: #262262;
+  font-family: 'Poppins';
+  font-size: 1.5rem;
 }
-#nowHiring .cardCont {
-  gap: 50px;
+.now-hiring-card {
+  background: #fafafa;
+  border-radius: 10px;
+  color: #262262;
+  font-family: 'Poppins';
+  padding: 20px;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 20%;
 }
 
-#nowHiring .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 30px 20px;
-  width: 270px;
-  gap: 25px;
-  background: #fafafa;
-  height: auto;
-  border: none;
-  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.05);
+.now-hiring-card h5 {
+  font-size: 1rem;
 }
-#nowHiring .card .desc {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 10px;
-}
-#nowHiring .card .desc .header {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #262262;
-}
-#nowHiring .card .desc .name {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 160%;
+.now-hiring-card .name {
   color: rgba(38, 34, 98, 0.8);
 }
-#nowHiring .card .desc .location {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 160%;
-  color: rgba(38, 34, 98, 0.6);
-}
-#nowHiring .card .desc .job {
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 160%;
+.now-hiring-card .function {
   color: rgba(38, 34, 98, 0.8);
 }
-#nowHiring .appsave {
-  width: auto;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-}
-#nowHiring .appsave .apply {
-  width: 108px;
-  height: 40px;
-  background: #262262;
-  border-radius: 9.59526px;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15.3524px;
-  line-height: 150%;
-  color: #ffffff;
-}
-#nowHiring .appsave .save {
-  width: 108px;
-  height: 40px;
-  background: #adadad;
-  border-radius: 9.59526px;
-  border: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15.3524px;
-  line-height: 150%;
-  color: #ffffff;
-}
-#nowHiring .view-more {
-  border: 0.959526px solid #f37821;
-  border-radius: 9.59526px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 9.59526px;
-  gap: 9.6px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  color: #f37821;
-  background: #efefef;
-}
-#nowHiring .view-more:hover {
-  color: #ffffff;
+
+.now-hiring-card .apply {
   background: #f37821;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-weight: 600;
+  border: transparent;
 }
+.now-hiring-card .save {
+  border-radius: 10px;
+  padding: 10px 20px;
+  background: #adadad;
+  color: #ffffff;
+  font-family: 'Poppins';
+  font-weight: 600;
+  border: transparent;
+}
+
 #companiesToFollow {
   display: flex;
   flex-direction: column;
