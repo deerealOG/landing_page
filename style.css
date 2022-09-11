@@ -407,7 +407,8 @@ swiper {
 }
 .hire-slide {
   text-align: center;
-  font-size: 16px;
+  font-size: 1.25rem;
+  font-weight: 700;
   font-family: 'Poppins';
   background: #fff;
   color: #030029;
@@ -457,6 +458,8 @@ swiper {
 
 .available-header {
   font-family: 'Poppins';
+  font-size: 1.5rem;
+  font-weight: 700;
   color: #262262;
 }
 
@@ -504,12 +507,15 @@ swiper {
   object-fit: cover;
 }
 
-.available-slide h3 {
+.available-slide h4 {
   font-family: 'Poppins';
   font-size: 1.25rem;
   font-weight: 700;
 }
 
+.available-slide p {
+  font-weight: 600;
+}
 .available-slide span {
   color: #ADADAD;
 }
@@ -523,6 +529,7 @@ swiper {
   border-radius: 9.59526px;
   padding: 10px 20px;
   font-family: 'Poppins';
+  font-weight: 600;
   color: #fff;
   border: transparent;
 }
@@ -534,6 +541,7 @@ swiper {
   width: 100px;
   height: 40px;
   font-family: 'Poppins';
+  font-weight: 600;
   color: #fff;
   border: transparent;
 }
