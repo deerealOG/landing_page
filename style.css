@@ -399,7 +399,7 @@ swiper {
   margin: 20px 0;
 }
 
-.hire {
+.mySwiper {
   height: 450px;
   width: 100%;
   padding: 50px;
@@ -454,14 +454,81 @@ swiper {
   font-size: 30px;
 }
 
-.available {
+.mySwiper2 {
   width: 100%;
-  height: 500px;
-  visibility: visible;
+  height: 400px;
+  border: solid;
+  text-align: center;
+  font-family: 'Poppins';
+  padding: 20px;
+  color: #262262;
 }
 
 .available-slide {
   background: #fafafa;
+  font-family: 'Poppins';
+  border: solid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+ 
+}
+
+.available-slide .avatar-container {
+  background: rgba(243, 120, 33, 0.6);
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 100%;
+  padding: 20px;
+  
+}
+
+.available-slide .avatar-container img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.available-slide h3 {
+  font-family: 'Poppins';
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.available-slide span {
+  color: #ADADAD;
+}
+.available-slide form {
+  display: flex;
+  gap: 10px;
+}
+
+.available-slide .save {
+  background: #262262;
+  border-radius: 9.59526px;
+  padding: 10px 20px;
+  font-family: 'Poppins';
+  color: #fff;
+  border: transparent;
+}
+
+.available-slide .hire {
+  background: #F37821;
+  border-radius: 9.59526px;
+  padding: 10px 20px;
+  width: 100px;
+  height: 40px;
+  font-family: 'Poppins';
+  color: #fff;
+  border: transparent;
 }
 
 #nowHiring {
@@ -985,7 +1052,7 @@ footer img {
   }
 
   .fa-magnifying-glass{
-    top: 30%;
+    top: 22%;
   }
 }
 
